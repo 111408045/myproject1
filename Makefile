@@ -1,7 +1,7 @@
-project: main.o mp1.o
-	cc main.o mp1.o -o project
-main.o: main.c mp1.h
+project: main.o mini.o
+	cc main.o mini.o -o project
+main.o: main.c mini.h
 	cc -Wall -c main.c
-mp1.o: mp1.c mp1.h
-	cc -Wall -c mp1.c
+mini.o: mini.c mini.h
+	cc -Wall -c mini.c
 
